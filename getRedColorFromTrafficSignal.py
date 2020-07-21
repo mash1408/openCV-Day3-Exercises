@@ -8,8 +8,8 @@ hsv = cv2.cvtColor(filter,cv2.COLOR_BGR2HSV)
 cv2.imshow('',hsv)
 cv2.waitKey(0)   
 # Threshold of red in HSV space 
-lower_blue = np.array([169, 10, 40])         
-upper_blue = np.array([189, 255, 255])      
+lower_blue = np.array([0, 225, 15])         
+upper_blue = np.array([10, 350, 255])      
  # preparing the mask to overlay 
 mask = cv2.inRange(hsv, lower_blue, upper_blue)
 
